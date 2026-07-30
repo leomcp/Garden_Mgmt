@@ -109,9 +109,14 @@ if __name__ == "__main__":
     # [None, "Tulsi_Kapoor_L", 15], 
     # [None, "Jui_L", 50], 
     # [None, "Kolkata_Pan_L", 2], 
-    [None, "Lemon_Grass_L", 4]
+    # [None, "Lemon_Grass_L", 4]
     # [None, "Nirgundi_L", 25], 
     # [None, "Parijatak_L", 1]
+    [None, "Double_Tagar_F", 1], 
+    [None, "Tulsi_Rama_L", 5],
+    ["2026-07-29", "Double_Tagar_F", 1], 
+    ["2026-07-29", "Tulsi_Rama_L", 5], 
+    ["2026-07-29", "Tulsi_Sabja_L", 5]
     ]
 
     hl = Harvest_Log(harvest_log)
