@@ -10,6 +10,7 @@ class Harvest_Log:
 
     def __init__(self, harvest_log): 
         self.harvest_log = harvest_log
+        print(self.harvest_log)
         self.harvest_log_df = pd.read_csv(DB_FILE_PATH)
         # print(self.harvest_log_df.head()) 
 
@@ -60,9 +61,16 @@ class Harvest_Log:
 
                     self.harvest_log_df.loc[(self.harvest_log_df["Date"] == curr_date), name] = val 
                     if name != "Fertiliser": 
-                        self.harvest_log_df.loc[(self.harvest_log_df.Date == curr_date), "Total"] += val  
+                        self.harvest_log_df.loc[(self.harvest_log_df.Date == curr_date), "Total"] += val 
+
+        col_names = ["Date", "Total"] + [col for col in self.harvest_log_df.columns if col not in ["Date", "Total"]]
+        self.harvest_log_df = self.harvest_log_df[col_names]
 
         self.save_df()
+        # print(self.harvest_log_df.iloc[-1].Total)
+        print(self.harvest_log_df.iloc[-1])
+
+
 
     def save_df(self): 
         self.harvest_log_df = self.harvest_log_df.fillna(0) 
@@ -112,11 +120,37 @@ if __name__ == "__main__":
     # [None, "Lemon_Grass_L", 4]
     # [None, "Nirgundi_L", 25], 
     # [None, "Parijatak_L", 1]
-    [None, "Double_Tagar_F", 1], 
-    [None, "Tulsi_Rama_L", 5],
-    ["2026-07-29", "Double_Tagar_F", 1], 
-    ["2026-07-29", "Tulsi_Rama_L", 5], 
-    ["2026-07-29", "Tulsi_Sabja_L", 5]
+    # [None, "Double_Tagar_F", 1], 
+    # [None, "Tulsi_Rama_L", 5],
+    # ["2026-07-29", "Double_Tagar_F", 1], 
+    # ["2026-07-29", "Tulsi_Rama_L", 5], 
+    # ["2026-07-29", "Tulsi_Sabja_L", 5]
+    # [None, "Tulsi_Krishna_L", 5], 
+    # [None, "Hibiscus_F", 1]
+    # [None, "Hibiscus_F", 3],
+    # [None, "Curry_L", 10], 
+    # [None, "Tulsi_Rama_L", 15],
+    # ["2026-08-02", "Hibiscus_F", 3], 
+    # ["2026-08-02", "Double_Tagar_F", 1], 
+    # ["2026-08-02", "Tulsi_Sabja_L", 5], 
+    # ["2026-08-01", "Tulsi_Rama_L", 5]
+    # [None, "Kolkata_Pan_L", 2]
+    # [None, "Mogra_F", 1]
+    # ["2026-08-05", "Mogra_F", 1],
+    # ["2026-08-05", "Hibiscus_F", 2],
+    # ["2026-08-06", "Hibiscus_F", 2],
+    # ["2026-08-06", "Mogra_F", 1],
+    # ["2026-08-07", "Hibiscus_F", 1],
+    # [None, "Double_Tagar_F", 2], 
+    # [None, "Tulsi_Sabja_L", 7], 
+    # [None, "Tulsi_Rama_L", 7]
+    # [None, "Brahmi_L", 4], 
+    # [None, "Sita_Ashoka_L", 5]
+    # [None, "Brahmi_L", 3], 
+    # [None, "Hibiscus_L", 30],
+    # [None, "Double_Tagar_F", 2],
+    # [None, "Tulsi_Sabja_L", 7], 
+    # [None, "Tulsi_Krishna_L", 7]
     ]
 
     hl = Harvest_Log(harvest_log)
