@@ -31,9 +31,10 @@ class Harvest_Log:
         self.harvest_log_df = pd.concat([self.harvest_log_df, full_dates_df], ignore_index = True)
         self.harvest_log_df['Date'] = self.harvest_log_df['Date'].dt.strftime('%Y-%m-%d')
 
-        
+        total = 0 
         
         for log_date, name, val in self.harvest_log:
+        
             # print(name)1
             flag = True   
             if name not in set(self.harvest_log_df.columns): 
@@ -53,22 +54,23 @@ class Harvest_Log:
                 start_datetime = pd.to_datetime(self.harvest_log_df.Date.iloc[0]) 
                 end_datetime = pd.to_datetime(self.harvest_log_df.Date.iloc[-1]) 
 
-                print(curr_datetime , start_datetime, end_datetime)
+                # print(curr_datetime , start_datetime, end_datetime)
 
                 if curr_datetime  >= start_datetime and curr_datetime <= end_datetime: 
                     curr_date = str(log_date if log_date is not None else date.today())
                     # print(curr_date)
 
                     self.harvest_log_df.loc[(self.harvest_log_df["Date"] == curr_date), name] = val 
-                    if name != "Fertiliser": 
-                        self.harvest_log_df.loc[(self.harvest_log_df.Date == curr_date), "Total"] += val 
+                    total += val 
+            
+        self.harvest_log_df["Total"] = self.harvest_log_df[[col for col in self.harvest_log_df.columns if col not in ["Date", "Total", "Fertiliser"]]].sum(axis = 1)
 
         col_names = ["Date", "Total"] + [col for col in self.harvest_log_df.columns if col not in ["Date", "Total"]]
         self.harvest_log_df = self.harvest_log_df[col_names]
 
         self.save_df()
         # print(self.harvest_log_df.iloc[-1].Total)
-        print(self.harvest_log_df.iloc[-1])
+        # print(self.harvest_log_df.iloc[-1])
 
 
 
@@ -84,6 +86,7 @@ class Harvest_Log:
 if __name__ == "__main__": 
 
     today_date = str(date.today())
+
     harvest_log = [
     # ['2026-07-07', 'Hibiscus_F', 1],
     # ['2026-07-07', 'Tulsi_Sabja_L', 5],  
@@ -96,7 +99,7 @@ if __name__ == "__main__":
     #     ['2026-07-10', 'Tulsi_Rama_L', 1], 
     # [None, "Double_Tagar_F", 1],
     # [None, "Hibiscus_F", 1],
-    #  [None, "Curry_L", 7],
+    # [None, "Curry_L", 7],
     # ["2026-06-01", "Curry_L", 10],
     # [None, "Hibiscus_F", 3], 
     # [None, "Tulsi_Rama_L", 7], 
@@ -151,6 +154,15 @@ if __name__ == "__main__":
     # [None, "Double_Tagar_F", 2],
     # [None, "Tulsi_Sabja_L", 7], 
     # [None, "Tulsi_Krishna_L", 7]
+    # [None, "Hibiscus_F", 1], 
+    # [None, "Double_Tagar_F", 2], 
+    # [None, "Tulsi_Rama_L", 11], 
+    # [None, "Tulsi_Sabja_L", 7]
+    # [None, "Tulsi_Rama_L", 8], 
+    # [None, "Double_Tagar_F", 1], 
+    # [None, "Insulin_L", 1], 
+    # [None, "Moringa_S", 2],
+    # [None, "Brahmi_L", 4]
     ]
 
     hl = Harvest_Log(harvest_log)
