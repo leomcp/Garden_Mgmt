@@ -162,7 +162,10 @@ if __name__ == "__main__":
     # [None, "Double_Tagar_F", 1], 
     # [None, "Insulin_L", 1], 
     # [None, "Moringa_S", 2],
-    # [None, "Brahmi_L", 4]
+    # [None, "Brahmi_L", 4],
+    [None, "Double_Tagar_F", 3], 
+    [None, "Tulsi_Rama_L", 4], 
+    [None, "Tulsi_Sabja_L", 6]
     ]
 
     hl = Harvest_Log(harvest_log)
