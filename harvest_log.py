@@ -163,9 +163,41 @@ if __name__ == "__main__":
     # [None, "Insulin_L", 1], 
     # [None, "Moringa_S", 2],
     # [None, "Brahmi_L", 4],
-    [None, "Double_Tagar_F", 3], 
-    [None, "Tulsi_Rama_L", 4], 
-    [None, "Tulsi_Sabja_L", 6]
+    # [None, "Double_Tagar_F", 3], 
+    # [None, "Tulsi_Rama_L", 4], 
+    # [None, "Tulsi_Sabja_L", 6]
+    # ["2026-08-15", "Tulsi_Rama_L", 5], 
+    # ["2026-08-15", "Tulsi_Sabja_L", 5], 
+    # ["2026-08-15", "Brahmi_L", 4],
+    # ["2026-08-15", "Lemon_Balm_L", 5],
+    # ["2026-08-16", "Insulin_L", 1],
+    # ["2026-08-16", "Hibiscus_F", 3],
+    # ["2026-08-17", "Hibiscus_F", 1],
+    # ["2026-08-17", "Bhumi_Amla_T", 1],
+    # [None, "Tulsi_Krishna_L", 4],
+    # [None, "Tulsi_Rama_L", 5],
+    # [None, "Tulsi_Sabja_L", 5],
+    # ["2026-08-16", "Double_Tagar_F", 1],
+    # [None, "Hibiscus_F", 1]
+    # [None, "Double_Tagar_F", 2], 
+    # [None, "Bhumi_Amla_T", 5],
+    # [None, "Tulsi_Krishna_L", 4], 
+    # [None, "Tulsi_Rama_L", 8],
+    # [None, "Tulsi_Kapoor_L", 4],  
+    # [None, "Tulsi_Sabja_L", 5] 
+    # [None, "Lemon_Grass_L", 30],
+    # [None, "Hibiscus_F", 1], 
+    [None, "Tulsi_Sabja_L", 5], 
+    # [None, "Tulsi_Krishna_L", 4], 
+    # [None, "Tulsi_Rama_L", 4],
+    ["2026-08-22", "Double_Tagar_F", 2], 
+    ["2026-08-22", "Tulsi_Rama_L", 10], 
+    ["2026-08-22", "Tulsi_Krishna_L", 10], 
+    ["2026-08-22", "Tulsi_Sabja_L", 7], 
+    ["2026-08-22", "Adulsa_L", 3], 
+
+    
+
     ]
 
     hl = Harvest_Log(harvest_log)
