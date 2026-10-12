@@ -88,271 +88,99 @@ if __name__ == "__main__":
     today_date = str(date.today())
 
     harvest_log = [
-    # ['2026-07-07', 'Hibiscus_F', 1],
-    # ['2026-07-07', 'Tulsi_Sabja_L', 5],  
-    #     ['2026-07-08', 'Hibiscus_F', 1], 
-    #     ['2026-07-08', 'Tulsi_Sabja_L', 5], 
-    #     ['2026-07-09', 'Hibiscus_F', 1], 
-    #     ['2026-07-09', 'Tulsi_Rama_L', 5], 
-    #     ['2026-07-09', 'Tulsi_Sabja_L', 5], 
-    #     ['2026-07-10', 'Hibiscus_F', 1], 
-    #     ['2026-07-10', 'Tulsi_Rama_L', 1], 
-    # [None, "Double_Tagar_F", 1],
-    # [None, "Hibiscus_F", 1],
-    # [None, "Curry_L", 7],
-    # ["2026-06-01", "Curry_L", 10],
-    # [None, "Hibiscus_F", 3], 
-    # [None, "Tulsi_Rama_L", 7], 
-    # [None, "Tulsi_Krishna_L", 7], 
-    # [None, "Tulsi_Sabja_L", 7], 
-    # [None, "Tulsi_Kapoor_L", 5], 
-    # [None, "Double_Tagar_F", 1]
-    # [None, "Hibiscus_F", 3],
-    # ["2026-07-15", "Hibiscus_F", 2], 
-    # ["2026-07-16", "Lemon_Grass_L", 1], 
-    # ["2026-07-16", "Tulsi_Sabja_L", 7]
-    # [None, "Tulsi_Rama_L", 5], 
-    # [None, "Tulsi_Sabja_L", 7],
-    # [None, "Hibiscus_F", 1], 
-    # [None, "Double_Tagar_F", 1], 
-    # [None, "Tulsi_Krishna_L", 5], 
-    # ["2026-07-24", "Curry_L", 10],
-    # [None, "Tulsi_Kapoor_L", 15], 
-    # [None, "Jui_L", 50], 
-    # [None, "Kolkata_Pan_L", 2], 
-    # [None, "Lemon_Grass_L", 4]
-    # [None, "Nirgundi_L", 25], 
-    # [None, "Parijatak_L", 1]
-    # [None, "Double_Tagar_F", 1], 
-    # [None, "Tulsi_Rama_L", 5],
-    # ["2026-07-29", "Double_Tagar_F", 1], 
-    # ["2026-07-29", "Tulsi_Rama_L", 5], 
-    # ["2026-07-29", "Tulsi_Sabja_L", 5]
-    # [None, "Tulsi_Krishna_L", 5], 
-    # [None, "Hibiscus_F", 1]
-    # [None, "Hibiscus_F", 3],
-    # [None, "Curry_L", 10], 
-    # [None, "Tulsi_Rama_L", 15],
-    # ["2026-08-02", "Hibiscus_F", 3], 
-    # ["2026-08-02", "Double_Tagar_F", 1], 
-    # ["2026-08-02", "Tulsi_Sabja_L", 5], 
-    # ["2026-08-01", "Tulsi_Rama_L", 5]
-    # [None, "Kolkata_Pan_L", 2]
-    # [None, "Mogra_F", 1]
-    # ["2026-08-05", "Mogra_F", 1],
-    # ["2026-08-05", "Hibiscus_F", 2],
-    # ["2026-08-06", "Hibiscus_F", 2],
-    # ["2026-08-06", "Mogra_F", 1],
-    # ["2026-08-07", "Hibiscus_F", 1],
-    # [None, "Double_Tagar_F", 2], 
-    # [None, "Tulsi_Sabja_L", 7], 
-    # [None, "Tulsi_Rama_L", 7]
-    # [None, "Brahmi_L", 4], 
-    # [None, "Sita_Ashoka_L", 5]
-    # [None, "Brahmi_L", 3], 
-    # [None, "Hibiscus_L", 30],
-    # [None, "Double_Tagar_F", 2],
-    # [None, "Tulsi_Sabja_L", 7], 
-    # [None, "Tulsi_Krishna_L", 7]
-    # [None, "Hibiscus_F", 1], 
-    # [None, "Double_Tagar_F", 2], 
-    # [None, "Tulsi_Rama_L", 11], 
-    # [None, "Tulsi_Sabja_L", 7]
-    # [None, "Tulsi_Rama_L", 8], 
-    # [None, "Double_Tagar_F", 1], 
-    # [None, "Insulin_L", 1], 
-    # [None, "Moringa_S", 2],
-    # [None, "Brahmi_L", 4],
-    # [None, "Double_Tagar_F", 3], 
-    # [None, "Tulsi_Rama_L", 4], 
-    # [None, "Tulsi_Sabja_L", 6]
-    # ["2026-08-15", "Tulsi_Rama_L", 5], 
-    # ["2026-08-15", "Tulsi_Sabja_L", 5], 
-    # ["2026-08-15", "Brahmi_L", 4],
-    # ["2026-08-15", "Lemon_Balm_L", 5],
-    # ["2026-08-16", "Insulin_L", 1],
-    # ["2026-08-16", "Hibiscus_F", 3],
-    # ["2026-08-17", "Hibiscus_F", 1],
-    # ["2026-08-17", "Bhumi_Amla_T", 1],
-    # [None, "Tulsi_Krishna_L", 4],
-    # [None, "Tulsi_Rama_L", 5],
-    # [None, "Tulsi_Sabja_L", 5],
-    # ["2026-08-16", "Double_Tagar_F", 1],
-    # [None, "Hibiscus_F", 1]
-    # [None, "Double_Tagar_F", 2], 
-    # [None, "Bhumi_Amla_T", 5],
-    # [None, "Tulsi_Krishna_L", 4], 
-    # [None, "Tulsi_Rama_L", 8],
-    # [None, "Tulsi_Kapoor_L", 4],  
-    # [None, "Tulsi_Sabja_L", 5] 
-    # [None, "Lemon_Grass_L", 30],
-    # [None, "Hibiscus_F", 1], 
-    [None, "Tulsi_Sabja_L", 5], 
-    # [None, "Tulsi_Krishna_L", 4], 
-    # [None, "Tulsi_Rama_L", 4],
-    ["2026-08-22", "Double_Tagar_F", 2], 
-    ["2026-08-22", "Tulsi_Rama_L", 10], 
-    ["2026-08-22", "Tulsi_Krishna_L", 10], 
-    ["2026-08-22", "Tulsi_Sabja_L", 7], 
-    ["2026-08-22", "Adulsa_L", 3], 
 
+    # [None, "Double_Tagar_F", 4]
+
+    # [None, "Double_Tagar_F", 1], 
+    # [None, "Hibiscus_F", 1],
+    # [None, "Guggul_T", 1] 
+
+    # [None, "Hibiscus_F", 0], 
+    # [None, "Jui_F", 0], 
     
 
-    ]
+    # ["2026-10-10", "Double_Tagar_F", 4], 
+    # ["2026-10-10", "Tulsi_Sabja_L", 15], 
+    # ["2026-10-10", "Hibiscus_F", 1],
 
+    # ["2026-10-11", "Double_Tagar_F", 4], 
+    # ["2026-10-11", "Neem_L", 1], 
+    
+
+
+    # ["2026-10-12", "Double_Tagar_F", 1], 
+    # ["2026-10-12", "Tulsi_Rama_A", 30]
+
+
+
+
+
+    # ["2026-10-03", "Hibiscus_F", 1], 
+    # ["2026-10-03", "Dhatura_F", 0], 
+    # ["2026-10-03", "Double_Tagar_F", 2],
+    # ["2026-10-03", "Tulsi_Sabja_L", 5], 
+    # ["2026-10-03", "Tulsi_Rama_L", 5],  
+
+
+    # ["2026-10-02", "Hibiscus_F", 1], 
+    # ["2026-10-02", "Dhatura_F", 1], 
+    # ["2026-10-02", "Double_Tagar_F", 4],
+    # ["2026-10-02", "Tulsi_Sabja_L", 5], 
+    # ["2026-10-02", "Tulsi_Rama_L", 5],  
+
+    # [None, "Hibiscus_F", 0], 
+    # [None, "Double_Tagar_F", 2], 
+    # [None, "Tulsi_Sabja_L", 5], 
+    # [None, "Insulin_L", 5], 
+    # [None, "Aloe_Vera_L", 2], 
+
+
+    # [None, "Double_Tagar_F", 3], 
+    # [None, "Hibiscus_F", 1],
+    # [None, "Tulsi_Rama_L", 5], 
+    # [None, "Tulsi_Krishna_L", 5], 
+    # [None, "Tulsi_Sabja_L", 7], 
+
+
+    # ["2026-10-01", "Double_Tagar_F", 2],
+    # ["2026-10-01", "Hibiscus_F", 2],
+    # ["2026-10-01", "Tulsi_Rama_L", 5], 
+    # ["2026-10-01", "Tulsi_Krishna_L", 5],
+    # ["2026-10-01", "Dhatura_F", ] 
+    # ["20206-10-01", "Tulsi_Sabja_L", 7], 
+
+    # ["2026-09-24", "Double_Tagar_F", 6], 
+
+
+    # [None, "Hibiscus_F", 2],
+    # [None, "Jui_F", 1], 
+    # [None, "Double_Tagar_F", 2], 
+    # [None, "Tulsi_Krishna_L", 5], 
+    # [None, "Tulsi_Sabja_L", 7], 
+
+
+    # ["2026-09-26", "Hibiscus_F", 1], 
+    # ["2026-09-26", "Jui_F", 1], 
+    # ["2026-09-26", "Double_Tagar_F", 5], 
+    # ["2026-09-26", "Tulsi_Rama_L", 7], 
+    # ["2026-09-26", "Tulsi_Sabja_L", 7], 
+
+
+
+    # ["2026-09-25", "Hibiscus_F", 5], 
+    # ["2026-09-25", "Jui_F", 1], 
+    # ["2026-09-25", "Double_Tagar_F", 2], 
+    # ["2026-09-25", "Tulsi_Krishna_L", 5], 
+    # ["2026-09-25", "Tulsi_Sabja_L", 7], 
+    # ["2026-09-25", "Tulsi_Rama_L", 7], 
+    # ["2026-09-25", "Tulsi_Kapoor_L", 5], 
+
+
+
+
+    
+    ]
     hl = Harvest_Log(harvest_log)
     hl.upd_harvest_log() 
 
-    # hl.del_col(["Rama_Tulsi_F", "Rama_Tulsi_F2"])
     
-
-
-    # harvest_log = [
-    #     ['2026-04-25','Hibiscus_F', 3],
-    #     ['2026-04-26','Hibiscus_F', 2],
-    #     ['2026-04-27','Hibiscus_F', 3],
-    #     ['2026-04-28','Hibiscus_F', 2],
-    #     ['2026-04-29','Hibiscus_F', 1],
-    #     ['2026-04-30','Hibiscus_F', 2],
-    #     ['2026-05-01','Hibiscus_F', 1],
-    #     ['2026-05-02','Hibiscus_F', 5],
-    #     ['2026-05-03','Hibiscus_F', 2],
-    #     ['2026-05-04','Hibiscus_F', 2],
-    #     ['2026-05-05','Hibiscus_F', 4],
-    #     ['2026-05-06','Hibiscus_F', 3],
-    #     ['2026-05-07','Hibiscus_F', 4],
-    #     ['2026-05-08','Hibiscus_F', 3],
-    #     ['2026-05-10','Hibiscus_F', 4],
-    #     ['2026-05-11','Hibiscus_F', 4],
-    #     ['2026-05-12','Hibiscus_F', 3],
-    #     ['2026-05-13','Hibiscus_F', 2],
-    #     ['2026-05-14','Hibiscus_F', 4],
-    #     ['2026-05-15','Hibiscus_F', 4],
-    #     ['2026-05-17','Hibiscus_F', 4],
-    #     ['2026-05-19','Hibiscus_F', 1],
-    #     ['2026-05-20','Hibiscus_F', 1],
-    #     ['2026-05-21','Hibiscus_F', 1],
-    #     ['2026-05-22','Hibiscus_F', 2],
-    #     ['2026-05-23','Hibiscus_F', 3],
-    #     ['2026-05-24','Hibiscus_F', 1],
-    #     ['2026-05-25','Hibiscus_F', 2],
-    #     ['2026-05-26','Hibiscus_F', 1],
-    #     ['2026-05-27','Hibiscus_F', 2],
-    #     ['2026-05-28','Hibiscus_F', 2],
-    #     ['2026-05-30','Hibiscus_F', 1],
-    #     ['2026-06-02','Hibiscus_F', 1],
-    #     ['2026-06-03','Hibiscus_F', 1],
-    #     ['2026-06-08','Hibiscus_F', 1],
-    #     ['2026-06-14','Hibiscus_F', 1],
-    #     ['2026-06-16','Hibiscus_F', 1],
-    #     ['2026-06-18','Hibiscus_F', 2],
-    #     ['2026-06-23','Hibiscus_F', 1],
-    #     ['2026-06-24','Hibiscus_F', 1],
-    #     ['2026-06-25','Hibiscus_F', 2],
-    #     ['2026-06-27','Hibiscus_F', 4],
-    #     ['2026-06-28','Hibiscus_F', 1],
-    #     ['2026-06-29','Hibiscus_F', 1],
-    #     ['2026-06-30','Hibiscus_F', 1],
-    #     ['2026-07-01','Hibiscus_F', 1],
-    #     ['2026-07-02','Kolkata_Pan_L', 1],
-    #     ['2026-07-02','Hibiscus_F', 1],
-    #     ['2026-07-02','Mogai_Pan_L', 1],
-    #     ['2026-07-01','Tulsi_Rama_L', 4],
-    #     ['2026-06-28','Aloe_Vera_L', 1],
-    #     ['2026-06-28','Tulsi_Sabja_L', 4],
-    #     ['2026-06-28','Tulsi_Rama_L', 4],
-    #     ['2026-06-24','Parijatak_L', 6],
-    #     ['2026-06-24','Tulsi_Rama_L', 6],
-    #     ['2026-06-24','Lemon_Grass_L', 2],
-    #     ['2026-06-25','Lemon_Grass_L', 2],
-    #     ['2026-05-07','Tulsi_Rama_L', 4],
-    #     ['2026-05-07','Tulsi_Sabja_L', 4],
-    #     ['2026-05-07','Tulsi_Kapoor_L', 4],
-    #     ['2026-05-11','Tulsi_Kapoor_L', 4],
-    #     ['2026-05-11','Tulsi_Krishna_L', 4],
-    #     ['2026-05-11','Pudina_L', 30],
-    #     ['2026-05-11','Brahmi_L', 1],
-    #     ['2026-05-11','Aloe_Vera_L', 1],
-    #     ['2026-05-14','Tulsi_Kapoor_L', 10],
-    #     ['2026-05-14','Tulsi_Rama_L', 5],
-    #     ['2026-05-14','Nirgundi_L', 12],
-    #     ['2026-05-15','Tulsi_Krishna_L', 8],
-    #     ['2026-05-16','Tulsi_Rama_L', 4],
-    #     ['2026-05-17','Tulsi_Rama_L', 4],
-    #     ['2026-05-17','Tulsi_Krishna_L', 4],
-    #     ['2026-05-17','Pippali_L', 1],
-    #     ['2026-05-17','Adulsa_L', 2],
-    #     ['2026-05-17','Nirgundi_L', 5],
-    #     ['2026-05-18','Tulsi_Sabja_L', 4],
-    #     ['2026-05-19','Tulsi_Sabja_L', 4],
-    #     ['2026-05-19','Tulsi_Krishna_L', 4],
-    #     ['2026-05-19','Pippali_L', 1],
-    #     ['2026-05-19','Nirgundi_L', 2],
-    #     ['2026-05-19','Tulsi_Rama_L', 4],
-    #     ['2026-05-19','Kolkata_Pan_L', 1],
-    #     ['2026-05-21','Tulsi_Rama_L', 4],
-    #     ['2026-05-21','Tulsi_Krishna_L', 4],
-    #     ['2026-05-21','Pudina_L', 10],
-    #     ['2026-05-22','Pudina_L', 5],
-    #     ['2026-05-06','Mogra_F', 1],
-    #     ['2026-05-07','Mogra_F', 1],
-    #     ['2026-05-08','Mogra_F', 3],
-    #     ['2026-05-09','Mogra_F', 6],
-    #     ['2026-05-10','Mogra_F', 5],
-    #     ['2026-05-11','Mogra_F', 5],
-    #     ['2026-05-12','Mogra_F', 2],
-    #     ['2026-05-14','Mogra_F', 1],
-    #     ['2026-06-03','Mogra_F', 3],
-    #     ['2026-06-04','Mogra_F', 2],
-    #     ['2026-06-05','Mogra_F', 7],
-    #     ['2026-06-06','Mogra_F', 3],
-    #     ['2026-06-07','Mogra_F', 2],
-    #     ['2026-06-08','Mogra_F', 3],
-    #     ['2026-06-09','Mogra_F', 8],
-    #     ['2026-06-11','Mogra_F', 1],
-    #     ['2026-05-25','Tulsi_Rama_L', 5],
-    #     ['2026-05-25','Tulsi_Kapoor_L', 5],
-    #     ['2026-05-27','Tulsi_Rama_L', 5],
-    #     ['2026-05-27','Tulsi_Sabja_L', 5],
-    #     ['2026-05-28','Tulsi_Sabja_L', 7],
-    #     ['2026-05-28','Tulsi_Rama_L', 6],
-    #     ['2026-05-30','Tulsi_Rama_L', 8],
-    #     ['2026-05-31','Tulsi_Rama_L', 5],
-    #     ['2026-05-31','Tulsi_Sabja_F', 1],
-    #     ['2026-06-01','Tulsi_Rama_L', 5],
-    #     ['2026-06-02','Neem_L', 5],
-    #     ['2026-06-02','Tulsi_Krishna_L', 5],
-    #     ['2026-06-03','Tulsi_Sabja_F', 1],
-    #     ['2026-06-03','Tulsi_Sabja_L', 5],
-    #     ['2026-06-04','Tulsi_Rama_L', 7],
-    #     ['2026-06-07','Tulsi_Rama_L', 4],
-    #     ['2026-06-07','Tulsi_Sabja_L', 4],
-    #     ['2026-06-12','Tulsi_Sabja_F', 1],
-    #     ['2026-06-12','Tulsi_Rama_L', 4],
-    #     ['2026-06-15','Tulsi_Rama_L', 4],
-    #     ['2026-06-18','Tulsi_Sabja_L', 4],
-    #     ['2026-06-18','Tulsi_Kapoor_L', 4],
-    #     ["2026-07-03", "Mogra_F", 1], 
-    #     ["2026-07-03", "Tulsi_Kapoor_L", 5], 
-    #     ["2026-07-03", "Tulsi_Sabja_L", 5],
-    #     ["2026-07-05", "Hibiscus_F", 5], 
-    #     ["2026-07-05", "Mogra_F", 3], 
-    #     ["2026-07-05", "Tulsi_Rama_L", 5], 
-    #     ["2026-07-05", "Tulsi_Sabja_L", 5],
-    #     ["2026-07-05", "Tulsi_Krishna_L", 10],
-    #     ["2026-07-06", "Tulsi_sabja_L", 7],
-    #     ["2026-04-25", "Fertiliser", "JeevanAmrutham"],
-    #     ["2026-05-22", "Fertiliser", "Banana_Tonic"], 
-    #     ["2026-05-27", "Fertiliser", "ButterMilk_Tonic"], 
-    #     ["2026-06-10", "Fertiliser", "Banana_Tonic"],
-    #     ["2026-05-01", "Fertiliser", "Vermicompost"], 
-    #     ["2026-05-16", "Fertiliser", "Epsum_Salt_Foliage"],
-    #     ["2026-05-23", "Fertiliser", "Epsum_Salt_Foliage"],
-    #     ["2026-05-30", "Fertiliser", "Epsum_Salt_Foliage"],
-        
-    # ]
-    
-
-
-    
-
