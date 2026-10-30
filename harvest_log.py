@@ -89,97 +89,18 @@ if __name__ == "__main__":
 
     harvest_log = [
 
-    # [None, "Double_Tagar_F", 4]
-
-    # [None, "Double_Tagar_F", 1], 
-    # [None, "Hibiscus_F", 1],
-    # [None, "Guggul_T", 1] 
-
-    # [None, "Hibiscus_F", 0], 
-    # [None, "Jui_F", 0], 
-    
-
-    # ["2026-10-10", "Double_Tagar_F", 4], 
-    # ["2026-10-10", "Tulsi_Sabja_L", 15], 
-    # ["2026-10-10", "Hibiscus_F", 1],
-
-    # ["2026-10-11", "Double_Tagar_F", 4], 
-    # ["2026-10-11", "Neem_L", 1], 
-    
+        [None, "Hibiscus_F", 5],
+        [None, "Tulsi_Kapoor_L", 5],
+        [None, "Tulsi_Sabja_L", 10],
+        [None, "Moringa_T", 2],
+        [None, "Lemon_Grass_L", 1]
+        
 
 
-    # ["2026-10-12", "Double_Tagar_F", 1], 
-    # ["2026-10-12", "Tulsi_Rama_A", 30]
-
-
-
-
-
-    # ["2026-10-03", "Hibiscus_F", 1], 
-    # ["2026-10-03", "Dhatura_F", 0], 
-    # ["2026-10-03", "Double_Tagar_F", 2],
-    # ["2026-10-03", "Tulsi_Sabja_L", 5], 
-    # ["2026-10-03", "Tulsi_Rama_L", 5],  
-
-
-    # ["2026-10-02", "Hibiscus_F", 1], 
-    # ["2026-10-02", "Dhatura_F", 1], 
-    # ["2026-10-02", "Double_Tagar_F", 4],
-    # ["2026-10-02", "Tulsi_Sabja_L", 5], 
-    # ["2026-10-02", "Tulsi_Rama_L", 5],  
-
-    # [None, "Hibiscus_F", 0], 
-    # [None, "Double_Tagar_F", 2], 
-    # [None, "Tulsi_Sabja_L", 5], 
-    # [None, "Insulin_L", 5], 
-    # [None, "Aloe_Vera_L", 2], 
-
-
-    # [None, "Double_Tagar_F", 3], 
-    # [None, "Hibiscus_F", 1],
-    # [None, "Tulsi_Rama_L", 5], 
-    # [None, "Tulsi_Krishna_L", 5], 
-    # [None, "Tulsi_Sabja_L", 7], 
-
-
-    # ["2026-10-01", "Double_Tagar_F", 2],
-    # ["2026-10-01", "Hibiscus_F", 2],
-    # ["2026-10-01", "Tulsi_Rama_L", 5], 
-    # ["2026-10-01", "Tulsi_Krishna_L", 5],
-    # ["2026-10-01", "Dhatura_F", ] 
-    # ["20206-10-01", "Tulsi_Sabja_L", 7], 
-
-    # ["2026-09-24", "Double_Tagar_F", 6], 
-
-
-    # [None, "Hibiscus_F", 2],
-    # [None, "Jui_F", 1], 
-    # [None, "Double_Tagar_F", 2], 
-    # [None, "Tulsi_Krishna_L", 5], 
-    # [None, "Tulsi_Sabja_L", 7], 
-
-
-    # ["2026-09-26", "Hibiscus_F", 1], 
-    # ["2026-09-26", "Jui_F", 1], 
-    # ["2026-09-26", "Double_Tagar_F", 5], 
-    # ["2026-09-26", "Tulsi_Rama_L", 7], 
-    # ["2026-09-26", "Tulsi_Sabja_L", 7], 
-
-
-
-    # ["2026-09-25", "Hibiscus_F", 5], 
-    # ["2026-09-25", "Jui_F", 1], 
-    # ["2026-09-25", "Double_Tagar_F", 2], 
-    # ["2026-09-25", "Tulsi_Krishna_L", 5], 
-    # ["2026-09-25", "Tulsi_Sabja_L", 7], 
-    # ["2026-09-25", "Tulsi_Rama_L", 7], 
-    # ["2026-09-25", "Tulsi_Kapoor_L", 5], 
-
-
-
-
-    
+        
     ]
+
+    
     hl = Harvest_Log(harvest_log)
     hl.upd_harvest_log() 
 
