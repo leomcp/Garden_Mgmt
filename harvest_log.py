@@ -89,11 +89,27 @@ if __name__ == "__main__":
 
     harvest_log = [
 
-        [None, "Hibiscus_F", 5],
-        [None, "Tulsi_Kapoor_L", 5],
-        [None, "Tulsi_Sabja_L", 10],
-        [None, "Moringa_T", 2],
-        [None, "Lemon_Grass_L", 1]
+
+        [None, "Hibiscus_F", 1], 
+        [None, "Double_Tagar_F", 1], 
+        [None, "Tulsi_Sabja_L", 20], 
+        [None, "Kolkata_Pan_L", 2], 
+        [None, "Mogai_Pan_L", 3], 
+        [None, "Curry_T", 1], 
+        [None, "Sonchafa_F", 1],
+
+
+        ["2026-11-06", "Hibiscus_F", 2], 
+        ["2026-11-06", "Aloe_Vera_L", 1], 
+        ["2026-11-06", "Double_Tagar_F", 2],
+
+
+
+
+        ["2026-11-05", "Hibiscus_F", 2],
+
+
+    
         
 
 
